@@ -1,0 +1,7 @@
+{
+  "name": "tool-box",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

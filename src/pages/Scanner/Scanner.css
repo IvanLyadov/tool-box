@@ -1,0 +1,40 @@
+.scanner-pointer {
+    position:absolute;
+    height:200px;
+    width:200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.scanner-item {
+    height:202px;
+    width:202px;
+    border: 2px solid #ca1c1e;
+    display: inline-block;
+    margin: 25px auto;
+    padding: 25px;
+    position: relative;
+}
+
+.scanner-item::before {
+    content: '';
+    width: calc(100% + 50px + 4px - 120px);
+    height: calc(100% + 4px);
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.scanner-item::after {
+    content: '';
+    height: calc(100% + 50px + 4px - 120px);
+    width: calc(100% + 4px);
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
